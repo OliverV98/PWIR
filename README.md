@@ -1,6 +1,10 @@
 # PWIR
 
-#PINOUT ON STM32CUBEIDE
+## PINOUT ON STM32CUBEIDE
+
+You can find out more information in PCB schematics or from mainboard V2.ioc
+
+```bash
 PF1 - GPIO-I ENC3A - Encoder Motor 3 encoder A
 PA0 - GPIO-I ENC2_A - Encoder Motor 2 encoder A
 PA2 - GPIO-I ENC1A - Encoder Motor 1 encoder A
@@ -18,4 +22,7 @@ PA11 - USB_DM
 PA12 - USB_DP
 PA13 - SWDIO
 PA14 - SWCLK
+```
+
+
 2021 DELTAX
