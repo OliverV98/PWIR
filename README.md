@@ -25,4 +25,14 @@ PA14 - SWCLK
 ```
 
 
+## Functionality of motor drivers
+
+```bash
+You get information about the postion of the motor only from one encoder. That is done via GPIO-I(look pinout above). That that is used in the mainboard code to calculate PID and set the motor speed accordingly. Motor drivers get their initial PWM from mainboard that are digitally isolated(really intersting how its done).
+```
+
+## Functionality of mainboard
+```bash
+You send the information from the computer via USB and setup the mainboard using SWDIO and SWCLK. That is done using ST-LINK(ask instructors for it). Mainboard sends out sends out in total 8PWM signals (that of 6 are in pairs for motor drivers,1ESC,1 for servo). Becouse TIMERS were not set up correctly we had to use GIPO-O to generate the PWM signals neccesary for the functionality of ESC and SERVO. Also for the same reasons GIPO-I were used for encoder reading.
+```
 2021 DELTAX
